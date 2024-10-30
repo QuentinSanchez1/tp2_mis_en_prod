@@ -1,9 +1,10 @@
-def soustraction(a, b):
-    return a - b
+def addition(a, b):
+    return a + b
+def soustraction(c, d):
+    return c - d
 
-if __name__ == "__main__":
-    result_add = addition(5, 7)
-    print(f"Le résultat de l'addition est : {result_add}")
-    result_sub = soustraction(10, 4)
-    print(f"Le résultat de la soustraction est : {result_sub}")
-
+if name == "main":
+    result = addition(5, 7)
+    result2 = soustraction(5, 7)
+    print(f"Le résultat est le suivant : {result}")
+    print(f"Le résultat est le suivant : {result2}")
