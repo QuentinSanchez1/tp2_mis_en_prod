@@ -1,13 +1,13 @@
 name: Test_unitaire
 run-name: ${{ github.actor }} Fait des test unitaires
 on: [push]
-permissions:
+permissions:  
   contents: read
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-name: Checkout code
-      uses: actions/checkout@v2  # Cloner le dépôt pour accéder aux fichiers
-name: Run unit tests
-    run: python3 test_app.py
+      - name: Checkout code
+        uses: actions/checkout@v2  # Cloner le dépôt pour accéder aux fichiers
+      - name: Run unit tests
+        run: python3 test_app.py
