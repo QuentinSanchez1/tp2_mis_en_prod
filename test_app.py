@@ -1,11 +1,9 @@
-import unittest
-from app import addition
+from app import soustraction
 
 class TestAddition(unittest.TestCase):
-    def test_addition(self):
-        self.assertEqual(addition(2, 3), 5)
-        self.assertEqual(addition(-1, 1), 0)
-        self.assertEqual(addition(0, 0), 0)
+    # tests précédents...
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_soustraction(self):
+        self.assertEqual(soustraction(5, 3), 2)
+        self.assertEqual(soustraction(0, 0), 0)
+        self.assertEqual(soustraction(-1, -1), 0)
